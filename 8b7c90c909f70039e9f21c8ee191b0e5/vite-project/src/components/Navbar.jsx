@@ -1,14 +1,24 @@
 
 import logo from "../assets/ecommerce-logo.png";
-import sideBar from "../assets/menu-icon.png";
+import image from "../assets/cart-logo.png";
 
-const NavBar = ({ onSidebarToggle }) => {
+const NavBar = (props) => {
   return (
+    <>    
     <div className='nav-bar'>
-      <img src={sideBar} onClick={onSidebarToggle}  className="sideBar" alt="Sidebar Logo"/>
-      <img src={logo} alt="logo"/>
-      <h2> Mandy's E-commerece App</h2>
+      <img src={logo} className="logo" alt="logo"/>
+      <input type="search" className="searchbar" 
+      placeholder="Search products, guides and more"></input>
+       <button className="button-logout" onClick="clicked">LogIn</button>
+      <button className="button-login" onClick="clicked">LogOut</button> 
+      <img src={image} className="cartlogo" alt="logo"/>    
     </div>
+    
+    <h2 className="headertitle"> Mandy's E-commerce App</h2>
+    
+   
+   
+    </>
   )
 }
 

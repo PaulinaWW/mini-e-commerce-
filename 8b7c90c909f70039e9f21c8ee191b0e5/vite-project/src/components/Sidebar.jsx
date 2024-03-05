@@ -1,16 +1,23 @@
 
-
-import { Link } from 'react-router-dom';
-
 const Sidebar = () => {
   return (
-    <aside>
-      <ul>
-        {/* Update link */}
-        <li><Link to="/">Home</Link></li>
-        <li><Link to="/about">About</Link></li>
+    <div id="container">
+     <h2 className="links">Related Links </h2>
+     <ul >
+     <li className="innertext">
+     <a href ="#">Home</a>
+      </li>
+      <li className="innertext">
+      <a href ="#">About</a>
+      </li>
+      <li className="innertext">
+      <a href ="#">Products</a>
+      </li>
+      <li className="innertext">
+      <a href ="#">Payments</a>
+      </li>
       </ul>
-    </aside>
+      </div>
   );
 };
 
