@@ -29,3 +29,20 @@ const App = () => {
 };
 
 export default App;
+
+
+
+import React from 'react';
+import List from './List';
+import data from './data'; // Assuming your JSON data is exported from a file named data.js
+
+const App = () => {
+  return (
+    <div>
+      <h1>Product List</h1>
+      <List data={data} />
+    </div>
+  );
+};
+
+export default App;

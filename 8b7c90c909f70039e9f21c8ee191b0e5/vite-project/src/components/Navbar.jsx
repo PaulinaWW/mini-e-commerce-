@@ -1,17 +1,14 @@
-import React from 'react'
 
-const NavBar = ({ Brands, Products, Pricing, Payment }) => {
-    console.log("The items on our Navigation Bar")
-    const Brands = {Clothing, Shirts, Shoes, Dress, }
-    const Pricing = {Clothing: 60, Shirts: 40, Dress: 30 }
-    const Products = {Ladies, Men, Children}
+import logo from "../assets/ecommerce-logo.png";
+import sideBar from "../assets/menu-icon.png";
 
+const NavBar = ({ onSidebarToggle }) => {
   return (
     <div className='nav-bar'>
-        <NavBar/>
-
-        
-        </div>
+      <img src={sideBar} onClick={onSidebarToggle}  className="sideBar" alt="Sidebar Logo"/>
+      <img src={logo} alt="logo"/>
+      <h2> Mandy's E-commerece App</h2>
+    </div>
   )
 }
 
