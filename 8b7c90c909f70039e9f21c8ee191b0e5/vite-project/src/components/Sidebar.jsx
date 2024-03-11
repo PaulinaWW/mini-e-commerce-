@@ -1,23 +1,18 @@
+import React from 'react';
+import { Link } from "react-router-dom";
 
 const Sidebar = () => {
   return (
-    <div id="container">
-     <h2 className="links">Related Links </h2>
-     <ul >
-     <li className="innertext">
-     <a href ="#">Home</a>
-      </li>
-      <li className="innertext">
-      <a href ="#">About</a>
-      </li>
-      <li className="innertext">
-      <a href ="#">Products</a>
-      </li>
-      <li className="innertext">
-      <a href ="#">Payments</a>
-      </li>
-      </ul>
+    <div className="container">
+      <div className="sidebar">
+        <h2>Related Links </h2>
+        <a href ="/">Home</a>
+	      <a href ="/about">About</a>
+	      <a href ="/products/:productId">Product</a>
+
       </div>
+      </div>
+     
   );
 };
 
